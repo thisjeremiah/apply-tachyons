@@ -1,7 +1,7 @@
-import t from 'tachyons-js';
+const t = require('tachyons-js');
 
 // apply :: String -> { k: v }
 const apply = className =>
     className.split(' ').map(obj => t[obj]);
 
-export default apply;
+module.exports = apply;
